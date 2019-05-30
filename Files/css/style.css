@@ -1,0 +1,394 @@
+* {
+
+}
+a {
+	text-decoration: none;
+}
+body {
+	font-family: 'Raleway';
+	overflow-x: hidden;
+	position: relative;
+	margin: 0;
+}
+#background {
+	background-image: url("../img/bg3.jpg");
+	position: absolute;
+
+	top: 0;
+	width: 100vw;
+	height: 100%;
+	opacity: 0.2;
+	z-index: -1;
+}
+
+#name {
+	display: inline;
+	float: left;
+	margin-left: 15px;
+	margin-top: 0px;
+	height: 65px;
+	width: 300px;
+	font-size: 50px;
+	background-color: #34a4af;
+	box-shadow: 2px 2px rgba(50,50,50,0.3);
+}
+#name p {
+	margin: 0px auto;
+	font-family: defult;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	vertical-align: middle;
+	color: #f0f0f0;
+	text-shadow: 2px 2px rgba(50,50,50,0.3);
+}
+
+#nav-bar {
+	height: 55px;
+	width: 100vw;
+	margin-top: 0px;
+	left: 0vw;
+
+	position: fixed;
+	background-color: #f0f0f0;
+	box-shadow: 2px 2px rgba(50,50,50,0.3);
+	overflow: visible;
+}
+#nav-bar ul {
+	margin-top: 15px;
+
+	vertical-align: middle;
+
+	list-style-type: none;
+	float: right;
+}
+#nav-bar li {
+	float: left;
+	display: inline;
+	padding: 0px 0px;
+	margin: 0px 20px;
+}
+#nav-bar li a {
+	text-decoration: none;
+	font-size: 25px;
+	color: #777;
+	padding-top: 10px;
+	padding-bottom: 11px;
+}
+#nav-bar ul li a:hover {
+	color: #39bac6 !important;
+}
+.tooltip .tooltiptext {
+	visibility: hidden;
+	width: 120px;
+	background-color: #777;
+	color: "black";
+	text-align: center;
+	padding: 5px 0px;
+	border-radius: 6px; 
+	color: #f0f0f0;
+
+	position: absolute;
+	z-index: 1;
+	margin-top: 8px;
+	margin-left: -50px;
+}
+.tooltip .tooltiptext::after {
+	content: " ";
+	position: absolute;
+	bottom: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: transparent transparent gray transparent;
+}
+
+.tooltip:hover .tooltiptext {
+	visibility: visible;
+}
+#nav-bar ul li:first-child {
+	display: none;
+}
+#nav-bar ul li:last-child {
+	padding-right: 40px
+}
+.active {
+	color: #34a4af !important;
+	font-weight: bold;
+}
+
+/* Formating for sections and containers */
+
+.section-header {
+	border-bottom: 2px solid #777;
+	width: 70vw;
+	margin-left: 15vw;
+	margin-bottom: 20px;
+	
+	text-align: center;
+	vertical-align: middle;
+	color: #777;
+	font-size: 35px
+}
+.section {
+	width: 100vw;
+	/*padding-top: 40px;*/
+	text-align: left;
+}
+.first {
+	padding-top: 100px !important;
+}
+
+.body-header {
+	text-align: center;
+	font-size: 25px;
+	padding-bottom: 15px;
+	font-weight: bold;
+}
+.col {
+	display: -webkit-flex;
+ 	display: flex;
+}
+.body-col {
+	-webkit-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	background-color: #ccc;
+	padding: 35px;
+}
+.body-col:not(:first-child) {
+	margin-left: 35px;
+}
+
+.container {
+	width: 70vw;
+	margin: 0 auto;
+	display: flex;
+	padding-bottom: 35px;
+}
+
+
+/* Making the column Setup */
+.elevator {
+	display: -webkit-flex;
+ 	display: flex;
+}
+.elevator-image {
+	-webkit-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+}
+.elevator-text {
+	-webkit-flex: 2;
+	-ms-flex: 2;
+	flex: 2;
+	margin-left: 35px;
+}
+/* - - - - - - - - - - - - */
+
+.elevator-image img {
+	height: 400px;
+	width: 400px;
+}
+.circular {
+	border-radius: 50%;
+}
+.elevator-text p {
+	margin-top:   -10px;
+	margin-bottom: 10px;
+	font-size:   1.35vw;
+}
+.elevator-text span {
+	color: #34a4af
+}
+.quote {
+	font-family: 'Baloo';
+	margin-top: -10px    !important;
+	margin-bottom: -25px !important;
+	color: #34a4af       !important;
+	font-size: 60px      !important;
+}
+.end-quote {
+	font-family: 'Baloo';
+	text-align: right;
+}
+
+.body-text {
+	font-size: 18px;
+}
+
+.experience-logo img {
+	width: 250px;
+	height: auto;
+}
+.experience-logo {
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+
+
+
+
+
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: flex;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.SSactive, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+
+
+
+
+
+
+footer {
+	height: 58px;
+	width: 100vw;
+
+	background-color: #f0f0f0;
+	box-shadow: 2px 2px rgba(50,50,50,0.3);
+}
+#footer-left {
+	display: inline;
+	float: left;
+	margin-top: 12px;
+	margin-left: 15px;
+	height: 40px;
+	width: 150px;
+	font-size: 22px;
+}
+#footer-left p {
+	margin: 0px auto;
+	text-align: center;
+	vertical-align: middle;
+	color: #f0f0f0;
+	text-shadow: 2px 2px rgba(50,50,50,0.3);
+}
+.footer-contents ul {
+	/*margin-top: 15px;*/
+
+	vertical-align: middle;
+
+	list-style-type: none;
+	float: right;
+}
+.footer-contents li {
+	float: left;
+	display: inline;
+	padding: 0px 0px;
+	margin: 0px 5px;
+}
+.footer-contents li a {
+	font-size: 15px;
+	color: #777;
+	vertical-align: middle;
+}
+.footer-contents p {
+	font-size: 20px;
+}
+.endLi {
+	padding-right: 30px !important;
+}
+
+
+
+
+
+@media screen and (max-width: 1200px) {
+
+}
+
