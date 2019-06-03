@@ -78,6 +78,9 @@ body {
 #nav-bar ul li a:hover {
 	color: #39bac6 !important;
 }
+#nav-bar ul li a:active {
+	color: #39bac6 !important;
+}
 .tooltip .tooltiptext {
 	visibility: hidden;
 	width: 120px;
@@ -106,9 +109,6 @@ body {
 
 .tooltip:hover .tooltiptext {
 	visibility: visible;
-}
-#nav-bar ul li:first-child {
-	display: none;
 }
 #nav-bar ul li:last-child {
 	padding-right: 40px
@@ -234,27 +234,27 @@ body {
 
 
 * {box-sizing:border-box}
-
-/* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
-  position: flex;
-  margin: auto;
+	max-width: 50vw;
+    position: flex;
+    margin: auto;
 }
-
-/* Hide the images by default */
+.mySlides img {
+	max-height: 70vh;
+	object-fit: contain;
+	max-width: 100%;
+}
 .mySlides {
   display: none;
 }
-
-/* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
-  position: absolute;
+  position: flex;
   top: 50%;
   width: auto;
   margin-top: -22px;
-  padding: 16px;
+  padding: 0px 8px;
+
   color: black;
   font-weight: bold;
   font-size: 18px;
@@ -262,39 +262,24 @@ body {
   border-radius: 0 3px 3px 0;
   user-select: none;
 }
-
-/* Position the "next button" to the right */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
-
-/* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+  text-decoration-color: rgba(0,0,0,0.8);
 }
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
+.caption {
+  color: gray;
+  font-weight: bold;
   font-size: 15px;
   padding: 8px 12px;
-  position: absolute;
+  position: flex;
   bottom: 8px;
   width: 100%;
   text-align: center;
+  bottom: 0px;
 }
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
   height: 15px;
@@ -305,9 +290,11 @@ body {
   display: inline-block;
   transition: background-color 0.6s ease;
 }
-
-.SSactive, .dot:hover {
-  background-color: #717171;
+.active {
+  background-color: transparent;
+}
+.dot:hover {
+	background-color: #717171;
 }
 
 /* Fading animation */
@@ -327,6 +314,11 @@ body {
   from {opacity: .4} 
   to {opacity: 1}
 }
+
+
+
+
+
 
 
 
