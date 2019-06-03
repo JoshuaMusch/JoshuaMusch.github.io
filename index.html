@@ -32,16 +32,7 @@
 				<p>Joshua Musch</p>
 			</div>
 			<ul>
-				<!-- Hamburger Menu -->
-				<li>
-					<a href="#" class="expandNavigation">
-						<div class="hamburger 1"></div>
-						<div class="hamburger 2"></div>
-						<div class="hamburger 3"></div>
-					</a>
-				</li>
 				<!-- List Options in navbar -->
-				
 				<li>
 					<div class="tooltip"><a href="#home" class="active goTo_home GoToSection"><i class="material-icons">home</i></a>
 						<span class="tooltiptext">Home</span>
@@ -68,7 +59,7 @@
 					</div>
 				</li>
 				<li>
-					<div class="tooltip"><a href="/Resume.pdf" class="" target="_blank"><i class="material-icons">save_alt</i></a>
+					<div class="tooltip"><a href="./Files/Joshua_Musch-Resume.pdf" class="" target="_blank"><i class="material-icons">save_alt</i></a>
 						<span class="tooltiptext">Resume</span>
 					</div>
 				</li>
@@ -86,7 +77,7 @@
 					<div class="elevator-text">
 						<p class="quote">"</p>
 						<p>
-							Hello! My name is Joshua Musch. I am attending the <span><strong>University of Cincinnati</strong></span> where I will be graduating in 2021 with a bachelor’s degree in <span><strong>Computer Engineering</strong></span>. I have worked alongside numerous senior engineers as a software developer co-op at <em>L3 Cincinnati Electronics</em> for two years now. I have made numerous contributions to our code base and application shown <a href="#experience" class="goTo_experience goToSection">below</a>. I developed skills ranging from C++ and Python to teamwork and time management. I love what do and look forward to <em>a lifetime of fun, engaging work</em>.
+							Hello! My name is Joshua Musch. I am attending the <span><strong>University of Cincinnati</strong></span> where I will be graduating in 2021 with a bachelor’s degree in <span><strong>Computer Engineering</strong></span>. I have worked alongside numerous senior engineers as a software developer co-op at <em>L3 Cincinnati Electronics</em> for two years now. I have made numerous contributions to our code base and application shown <a href="#experience" class="goTo_experience goToSection">below</a>. I developed skills ranging from C++ and Python to teamwork and time management. I love what I do and look forward to <em>a lifetime of fun, engaging work</em>.
 						</p>
 						<p class="end-quote quote">"</p>
 					</div>
@@ -99,6 +90,8 @@
 		<!--  1 Column on Mobile  -->
 		<!-- #################### -->
 		<div class="section" id="aboutMe">
+			<br></br>
+			<br></br>
 			<div class="section-header">
 				About Me
 			</div>
@@ -123,6 +116,8 @@
 		<!-- Experience Page -->
 		<!-- ############### -->
 		<div class="section" id="experience">
+			<br></br>
+			<br></br>
 			<div class="section-header">
 				Experience
 			</div>
@@ -133,7 +128,9 @@
 							<img src="Files/img/L3_Logo.png">
 						</div>
 						<div class="body-text">
-							I graduated in the top <strong>five percent</strong> of my class with college credit in 2016. Since then, I have been attending the University of Cincinnati for computer engineering with a graduation date of <strong>May 2021</strong>. I am currently looking into a masters program that would suit me as a next step forward in my education.
+							<p style="margin:0px">
+								At L3 I have worn many different hats. Those included a <strong>test engineer</strong>, a <strong>research assitant</strong> and a <strong>software engineer</strong> to name a few. I developed test software and ran tests on camera units qualifying them before shipment. As a software engineer, I worked on a C++ application that used AI to detect, track and identitfy drones.
+							</p>
 						</div>
 					</div>
 					<div class="body-col">
@@ -141,7 +138,9 @@
 							<img src="Files/img/BBY_Logo.png">
 						</div>
 						<div class="body-text">
-							Scott Rosenberg defined <strong>Hacker</strong> as <em>"an obsessive programming tinkerer"</em> and this describes my interests perfectly. I am a tinkerer at heart with an early passion for legos. Software has slowly taken over with age with strong interests in languages such as C++, C#, Python, MATLAB, HTML and much more!
+							<p style="margin:0px">
+								At Best Buy, I worked as a computer sales associate and a <strong>geek squad consultant agent</strong>. As a Geek Squad Agent, my normal work day included me assisting clients with computer hardware/software issues. I would attempt to <em>diagnose</em> the issue and <em>propose</em> solutions to the client. 
+							</p>
 						</div>
 					</div>
 				</div>
@@ -151,43 +150,58 @@
 		<!-- Projects Page -->
 		<!-- ############### -->
 		<div class="section" id="projects">
+			<br></br>
+			<br></br>
 			<div class="section-header">
 				Projects
 			</div>
 			<div class="slideshow-container">
 
-  <!-- Full-width images with number and caption text -->
-  <div class="mySlides fade">
-    <div class="numbertext">1 / 3</div>
-    <img src="./Files/img/bg1.jpg" style="width:100%">
-    <div class="text">Caption Text</div>
-  </div>
+  			<!-- Full-width images with number and caption text -->
+  			<div class="mySlides fade">
+  				<a onclick="plusSlides(1)">
+    				<img src="./Files/img/Artifact1_Dagor.JPG" style="width:100%">
+    				<div class="caption">C++ Application implemented on a rugged box inside an U.S. Military Polaris Dagor</div>
+    			</a>
+  			</div>
+  			<div class="mySlides fade">
+  				<a onclick="plusSlides(1)">
+    				<img src="./Files/img/Artifact2_Dagor.JPG" style="width:100%">
+    				<div class="caption">Hardware setup with IR & Visable Camera set on a Gimbal</div>
+    			</a>
+  			</div>
+  			<div class="mySlides fade">
+  				<a onclick="plusSlides(1)">
+    				<img src="./Files/img/Player1 won.png" style="width:100%">
+    				<div class="caption">The Game of Thriteen - C++ App implementing stacks & pointers</div>
+    			</a>
+  			</div>
+			<div class="mySlides fade">
+				<a onclick="plusSlides(1)">
+    				<img src="./Files/img/PageFlip.PNG" style="width:100%">
+    				<div class="caption">PageFlip is a project with a group where we designed an android app and a website for college students to exchange books</div>
+    			</a>
+  			</div>
 
-  <div class="mySlides fade">
-    <div class="numbertext">2 / 3</div>
-    <img src="./Files/img/bg2.jpg" style="width:100%">
-    <div class="text">Caption Two</div>
-  </div>
-
-  <div class="mySlides fade">
-    <div class="numbertext">3 / 3</div>
-    <img src="./Files/img/bg3.jpg" style="width:100%">
-    <div class="text">Caption Three</div>
-  </div>
-
-  <!-- Next and previous buttons -->
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-</div>
-<br>
-
-<!-- The dots/circles -->
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span> 
-  <span class="dot" onclick="currentSlide(2)"></span> 
-  <span class="dot" onclick="currentSlide(3)"></span> 
-</div>
+  			<!-- Next and previous buttons -->
+  			<div style="text-align:center">
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    			<span class="dot" onclick="currentSlide(1)"></span> 
+    			<span class="dot" onclick="currentSlide(2)"></span> 
+    			<span class="dot" onclick="currentSlide(3)"></span>
+    			<span class="dot" onclick="currentSlide(4)"></span>
+    			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+			</div>
 		</div>
+
+<!--
+		<div class="container">
+			<br></br>
+			<br></br>
+			<embed src="./Files/Joshua_Musch-Resume.pdf#toolbar=1&navpanes=1&scrollbar=1" type="application/pdf" width="100%" height="600px" />
+		</div>
+-->
+
 	</body>
 
 	<footer>
@@ -209,35 +223,35 @@
 	</footer>
 
 
-<script>
-var slideIndex = 1;
-showSlides(slideIndex);
+	<script>
+	var slideIndex = 1;
+	showSlides(slideIndex);
 
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+	// Next/previous controls
+	function plusSlides(n) {
+  		showSlides(slideIndex += n);
+	}
 
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
+	// Thumbnail image controls
+	function currentSlide(n) {
+  		showSlides(slideIndex = n);
+	}
 
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1} 
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none"; 
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block"; 
-  dots[slideIndex-1].className += " active";
-}
-</script>
+	function showSlides(n) {
+  		var i;
+  		var slides = document.getElementsByClassName("mySlides");
+  		var dots = document.getElementsByClassName("dot");
+  		if (n > slides.length) {slideIndex = 1} 
+  		if (n < 1) {slideIndex = slides.length}
+  		for (i = 0; i < slides.length; i++) {
+      		slides[i].style.display = "none"; 
+  		}
+  		for (i = 0; i < dots.length; i++) {
+      		dots[i].className = dots[i].className.replace(" active", "");
+  		}
+  		slides[slideIndex-1].style.display = "block"; 
+  		dots[slideIndex-1].className += " active";
+	}
+	</script>
 
 </html>
