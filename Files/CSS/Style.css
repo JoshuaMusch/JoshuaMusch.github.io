@@ -306,8 +306,8 @@ nav ul li a:hover::after  {
 	background-size: 86px;
 	background-position: center;
 }
-.school      { background-image: url("../img/icons/school2.svg"     ); }
-.interests   { background-image: url("../img/icons/interests2.svg"  ); }
+.school      { background-image: url("../Img/icons/school2.svg"     ); }
+.interests   { background-image: url("../Img/icons/interests2.svg"  ); }
 .col-header  {
 	text-align: center;
 	padding-bottom: 2rem;
