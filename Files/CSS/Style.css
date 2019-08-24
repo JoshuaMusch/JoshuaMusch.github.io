@@ -291,7 +291,7 @@ nav ul li a:hover::after  {
 	height:        85vh;
   	margin:   -150px 2%;
   	padding:       10px;
-	background: linear-gradient(to bottom, rgba(100,100,100,0.95), rgba(25,25,25,0.1));
+	background: linear-gradient(to bottom, rgba(100,100,100,1), rgba(25,25,25,0.1));
 	box-shadow: 3px 3px 8px gray;
 }
 .col-icon{
@@ -318,7 +318,7 @@ nav ul li a:hover::after  {
 .col-text {
 	text-align: left;
 	padding-bottom: 2rem;
-	font-size: 2rem;
+	font-size: 2.5rem;
 	font-family: Raleway;
 	color: white;
 	text-shadow: -1px -1px 0 gray, 1px -1px 0 gray, -1px 1px 0 #000, 1px 1px 0 gray;
@@ -365,7 +365,7 @@ nav ul li a:hover::after  {
 	.quote { margin-bottom: -50px !important; }
 	.last  { margin-top:    -35px !important; }
 	.col-item { width: 96%; }
-	.col-item .second {margin: 15px 2% !important;}
+	.second { margin-top: 25vh !important; }
 }
 
 @media screen and (max-width: 900px) {
@@ -380,7 +380,14 @@ nav ul li a:hover::after  {
 	}
 }
 
+@media screen and (max-width: 700px) {
+	.col-text { font-size: 2.25rem; }
+	.col-icon{ width: 125px; height: 125px; }
+	.col-header { font-size: 1.75rem; }
+}
+
 @media screen and (max-width: 600px) {
+	.col-text { font-size: 2rem; }
 	.circular {
 		height: 250px !important;
 		width: 250px  !important;
@@ -391,6 +398,8 @@ nav ul li a:hover::after  {
 }
 
 @media screen and (max-width: 500px) {
+	.col-text { font-size: 1.75rem; }
+	.col-icon{ width: 100px; height: 100px; }
 	.brand { display: none; }
 	nav { justify-content: center !important; }
 	.circular {
@@ -400,4 +409,12 @@ nav ul li a:hover::after  {
 	.quote { margin-bottom: -60px !important; }
 	.last  { margin-top:    -40px !important; }
 }
-	
+
+@media screen and (max-width: 370px) {
+	.col-text { font-size: 1.5rem; }
+}
+
+@media screen and (max-width: 355px) {
+	.second { margin-top: 35vh !important; }
+	.col-text { font-size: 1.25rem; }
+}
