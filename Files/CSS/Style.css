@@ -171,6 +171,7 @@ nav ul li a:hover::after  {
     display:none;
 }
 .hoverable:hover .hover {
+	transition-delay: 2s;
     display:inline;
 }
 
@@ -202,6 +203,18 @@ nav ul li a:hover::after  {
 }
 .envelope:hover {
     background-color: #7d7d7d;
+    font-size: 24px !important;
+    padding: 14px !important;
+    text-shadow: 3px 3px 5px #000;
+    transition: all 0.3s ease;
+}
+.phone {
+	display: none !important;
+	background: #37ab56;
+    color: white;
+}
+.phone:hover {
+    background-color: #2a9145;
     font-size: 24px !important;
     padding: 14px !important;
     text-shadow: 3px 3px 5px #000;
@@ -252,9 +265,9 @@ nav ul li a:hover::after  {
 .Mobile { display: none; }
 .icons  { display: none; }
 
-.transition2 {
+.transition1 {
 	background: #E00122;
-	height: 20px;
+	height: 5px;
 	width: 100%;
 }
 .transition2 {
@@ -293,7 +306,7 @@ nav ul li a:hover::after  {
 	}
  }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1000px) {
 	.Mobile { display: inline-block; }
 	.Full { display: none; }
 	.container { text-align: center !important; }
@@ -322,6 +335,9 @@ nav ul li a:hover::after  {
 	.circular {
 		height: 250px !important;
 		width: 250px  !important;
+	}
+	.phone {
+		display: block !important;
 	}
 }
 
