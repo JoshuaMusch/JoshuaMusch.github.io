@@ -281,7 +281,7 @@ nav ul li a:hover::after  {
 }
 .transition2 {
 	background: linear-gradient(to bottom, #E00122, white);
-	height: 150px;
+	height: 40vh;
 	width: 100%;
 }
 
@@ -289,7 +289,7 @@ nav ul li a:hover::after  {
 	float:         left;
   	width:          46%;
 	height:        85vh;
-  	margin:   -150px 2%;
+  	margin:   -40vh 2%;
   	padding:       10px;
 	background: linear-gradient(to bottom, rgba(100,100,100,1), rgba(25,25,25,0.1));
 	box-shadow: 3px 3px 8px gray;
@@ -365,8 +365,12 @@ nav ul li a:hover::after  {
 	}
 	.quote { margin-bottom: -50px !important; }
 	.last  { margin-top:    -35px !important; }
-	.col-item { width: 96%; }
-	.second { margin-top: 25vh !important; }
+	.col-item { 
+		width: 96%; 
+		margin-top: -55vh
+	}
+	.transition2 { height: 55vh; }
+	.second { margin-top: 34vh !important; }
 }
 
 @media screen and (max-width: 900px) {
@@ -413,6 +417,9 @@ nav ul li a:hover::after  {
 	}
 	.quote { margin-bottom: -60px !important; }
 	.last  { margin-top:    -40px !important; }
+	.col-item { margin-top: -85vh }
+	.transition2 { height: 85vh; }
+	.second { margin-top: 5vh !important; }
 }
 
 @media screen and (max-width: 370px) {
@@ -420,6 +427,5 @@ nav ul li a:hover::after  {
 }
 
 @media screen and (max-width: 355px) {
-	.second { margin-top: 35vh !important; }
 	.col-text { font-size: 1.25rem; }
 }
