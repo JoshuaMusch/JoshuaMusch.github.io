@@ -31,10 +31,19 @@ nav {
 }
 
 .container {
-	width: 100%-13rem;
-	height: 80%;
-	margin: 2rem 6.5rem;
-	text-align: left;
+	width:   100%-13rem;
+	max-width:   140rem;
+	height:         80%;
+	margin:      0 auto;
+	text-align:    left;
+}
+.elevator {
+	width:   100%-13rem !important;
+	max-width: 10000rem !important;
+	margin: 2rem 6.5rem !important;
+}
+.container {
+	
 }
 .container p {
 	padding-top: 1.5rem;
@@ -276,11 +285,6 @@ nav ul li a:hover::after  {
 	width: 100%;
 }
 
-.container {
-	width:          90%;
-	max-width:   140rem;
-	margin:      0 auto;
-}
 .col-item {
 	float:         left;
   	width:          46%;
@@ -302,8 +306,8 @@ nav ul li a:hover::after  {
 	background-size: 86px;
 	background-position: center;
 }
-.school      { background-image: url("../Img/icons/school2.svg"     ); }
-.interests   { background-image: url("../Img/icons/interests2.svg"  ); }
+.school      { background-image: url("../img/icons/school2.svg"     ); }
+.interests   { background-image: url("../img/icons/interests2.svg"  ); }
 .col-header  {
 	text-align: center;
 	padding-bottom: 2rem;
@@ -392,10 +396,6 @@ nav ul li a:hover::after  {
 	.circular {
 		height: 200px !important;
 		width: 200px  !important;
-	}
-	.container p { 
-		margin-left:  0 !important; 
-		margin-right: 0 !important; 
 	}
 	.quote { margin-bottom: -60px !important; }
 	.last  { margin-top:    -40px !important; }
