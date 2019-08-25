@@ -1,0 +1,127 @@
+@media screen and (max-width: 1300px) {
+	.grid-text { font-size: 2.5rem          !important; }
+}
+@media screen and (max-width: 1000px) {
+	.Mobile { display: inline-block         !important; }
+	.Full { display: none                   !important; }
+	.circular {
+		height: 350px                       !important;
+		width:  350px                       !important;
+	}
+	.container { text-align: center         !important; }
+	.elevator-text p { 
+		margin-left:   4rem                 !important;
+		padding-left:  0rem                 !important; 
+		padding-right: 0rem                 !important; 
+		font-size:     2vh                  !important;
+	}
+	.quote { margin-bottom: -50px           !important; }
+	.last  { margin-top:    -35px           !important; }
+
+	.grid{ grid-template-columns: 1fr 12fr 1fr !important; }
+	.transition2{
+		grid-row:    1/8                    !important;
+		grid-column: 1/4                    !important;
+	}
+	#about-Me {
+		grid-row:    1/2                    !important;
+		grid-column: 2/3                    !important;
+	}	
+	.first {
+		grid-row:    2/3                    !important;
+		grid-column: 2/3                    !important;
+	}
+	.second {
+		grid-row:    3/4                    !important;
+		grid-column: 2/3                    !important;
+	}
+
+	#experience {
+		grid-row:    4/5                    !important;
+		grid-column: 2/3                    !important;
+	}
+	.third {
+		grid-row:    5/6                    !important;
+		grid-column: 2/3                    !important;
+	}
+	.fourth {
+		grid-row:    6/7                    !important;
+		grid-column: 2/3                    !important;
+	}
+
+
+
+
+	.first {
+		grid-row:    2/3                    !important;
+		grid-column: 2/3                    !important;
+	}
+	.second {
+		grid-row:    3/4                    !important;
+		grid-column: 2/3                    !important;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.Icons { display: inline-block          !important; }
+	.Text { display: none                   !important; }
+}
+
+@media screen and (max-width: 800px) {
+	.circular {
+		height: 300px                       !important;
+		width:  300px                       !important;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.grid-text { font-size: 2.25rem         !important; }
+	.grid-icon{ 
+		width: 125px                        !important; 
+		height: 125px                       !important; 
+	}
+	.grid-header { font-size: 1.75rem       !important; }
+}
+
+@media screen and (max-width: 600px) {
+	.grid-text { font-size: 2rem; }
+	.circular {
+		height: 250px                       !important;
+		width:  250px                       !important;
+	}
+	.phone {
+		display: block                      !important;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.elevator-text p { 
+		margin-left:   0rem                 !important;
+		margin-right:  0rem                 !important;
+	}
+	.grid-text { font-size: 1.75rem         !important; }
+	.grid-icon{ 
+		width: 120px                        !important; 
+		height: 120px                       !important; 
+	}
+	.brand { display: none                  !important; }
+	nav { justify-content: center           !important; }
+	.circular {
+		height: 200px                       !important;
+		width: 200px                        !important;
+	}
+	.quote { margin-bottom: -60px           !important; }
+	.last  { margin-top:    -40px           !important; }
+}
+
+@media screen and (max-width: 421px) {
+	.grid-main-header { font-size: 5rem     !important; }
+}
+
+@media screen and (max-width: 370px) {
+	.grid-text { font-size: 1.5rem          !important; }
+}
+
+@media screen and (max-width: 355px) {
+	.grid-text { font-size: 1.25rem         !important; }
+}

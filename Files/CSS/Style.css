@@ -12,23 +12,6 @@ a {
 	color: #eee;
 	transition: all 0.4s ease-in-out;
 }
-header {
-	width:  100% ;
-	height: 100vh;
-	background: linear-gradient(to bottom, rgba(0,0,0,0.9), rgba(0,0,0,0.4)), url("https://s3-us-west-2.amazonaws.com/asset.plexuss.com/college/overview_images/3014_university-of-cincinnati-main-campus_01.jpg") center no-repeat;
-	background-size: cover;
-	position: relative;
-	overflow: hidden  ;
-}
-nav {
-	padding-top: 5rem;
-	padding-bottom: 5vh;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	text-transform: uppercase;
-	font-size: 1.6rem;
-}
 
 .container {
 	width:   100%-13rem;
@@ -42,192 +25,10 @@ nav {
 	max-width: 10000rem !important;
 	margin: 2rem 6.5rem !important;
 }
-.container {
-	
-}
 .container p {
 	padding-top: 1.5rem;
 	padding-left: 5rem;
 	padding-right: 5rem;
-}
-
-.menu-toggle {
-	position: fixed;
-	top:   2.5rem;
-	right: 2.5rem;
-	color: #eee  ;
-	font-size: 3rem;
-	cursor: pointer;
-	z-index: 1000;
-	display: none;
-}
-.nav-container {
-	max-width: 140rem;
-	width: 92%;
-	margin: 0 auto;
-}
-.overlay{
-	background-color: rgba(0,0,0,.95);
-	position: fixed;
-	right: 0;
-	left: 0;
-	top: 0;
-	bottom: 0;
-	transition: opacity 650ms;
-	transform: scale(0);
-	opacity: 0;
-    display: none;
-}
-.brand {
-	font-size: 3rem;
-	font-weight: 300;
-	transform: translateX(-100rem);
-	animation: slideIn .5s forwards;
-	padding-left: 1rem;
-	margin-left:  1rem;
-	text-shadow: 2px 2px 4px #000;
-}
-.brand span {
-	color: #E00122;
-}
-
-nav ul {
-	display: flex;
-}
-nav ul li {
-	list-style: none;
-	transform: translateX(100rem);
-	animation: slideIn .5s forwards;
-}
-nav ul li:nth-child(1) {
-	animation-delay: 0.0s
-}
-nav ul li:nth-child(2) {
-	animation-delay: 0.5s
-}
-nav ul li:nth-child(3) {
-	animation-delay: 1.0s
-}
-nav ul li:nth-child(4) {
-	animation-delay: 1.5s
-}
-nav ul li:nth-child(5) {
-	animation-delay: 2.0s
-}
-nav ul li a {
-	padding: 1rem 0;
-	padding-left: 1rem;
-	padding-right: 1rem;
-	margin: 0 1rem;
-	position: relative;
-	letter-spacing: 2px;
-	text-shadow: 2px 2px 4px #000;
-}
-
-
-nav ul li a::before,
-nav ul li a::after  {
-	content: '';
-	position: absolute;
-	width:100% !important;
-	height: 2px !important;
-	background-color: #E00122 !important;
-	left: 0;
-	transform: scaleX(0);
-	transition: all .5s;
-}
-nav ul li a::before {
-	top: 0;
-	transform-origin: left;
-	left: 0;
-	transform-origin: bottom;
-}
-nav ul li a::after {
-	bottom: 0;
-	transform-origin: right;
-	right: 0;
-	transform-origin: top;
-}
-nav ul li a:hover::before,
-nav ul li a:hover::after  {
-	transform: scaleX(1);
-}
-
-/* Social Media Side Bar*/
-.icon-bar {
-    position: fixed;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-}
-.icon-bar a {
-    display: block;
-    text-align: center;
-    padding: 16px;
-    transform: translateX(-6rem);
-    animation: slideIn 1.0s forwards;
-    animation-delay: 0.2s;
-    transition: all 0.3s ease;
-    color: white;
-    font-size: 20px;
-    text-shadow: 1px 1px 3px #000;
-}
-.hoverable .hover {
-    display:none;
-}
-.hoverable:hover .normal {
-    display:none;
-}
-.hoverable:hover .hover {
-	transition-delay: 2s;
-    display:inline;
-}
-
-.facebook {
-    background: #3B5998;
-    color: white;
-}
-.facebook:hover {
-    background-color: #304980;
-    font-size: 24px !important;
-    padding: 14px !important;
-    text-shadow: 3px 3px 5px #000;
-    transition: all 0.3s ease;
-}
-.linkedin {
-    background: #007bb5;
-    color: white;
-}
-.linkedin:hover {
-    background-color: #006c9e;
-    font-size: 24px !important;
-    padding: 14px !important;
-    text-shadow: 3px 3px 5px #000;
-    transition: all 0.3s ease;
-}
-.envelope {
-    background: #999;
-    color: white;
-}
-.envelope:hover {
-    background-color: #7d7d7d;
-    font-size: 24px !important;
-    padding: 14px !important;
-    text-shadow: 3px 3px 5px #000;
-    transition: all 0.3s ease;
-}
-.phone {
-	display: none !important;
-	background: #37ab56;
-    color: white;
-}
-.phone:hover {
-    background-color: #2a9145;
-    font-size: 24px !important;
-    padding: 14px !important;
-    text-shadow: 3px 3px 5px #000;
-    transition: all 0.3s ease;
 }
 
 .elevator-image img {
@@ -242,8 +43,8 @@ nav ul li a:hover::after  {
 	position: static !important;
 	border-radius: 50%;
 	box-shadow: 2px 2px 9px black;
-	height: 350px !important;
-	width: 350px  !important;
+	height: 350px;
+	width: 350px;
 	top: 20% !important;
 }
 
@@ -274,27 +75,52 @@ nav ul li a:hover::after  {
 .Mobile { display: none; }
 .icons  { display: none; }
 
-.transition1 {
-	background: #E00122;
-	height: 25px;
-	width: 100%;
-}
 .transition2 {
 	background: linear-gradient(to bottom, #E00122, white);
-	height: 40vh;
-	width: 100%;
+
+	grid-row: 1/8;
+	grid-column: 1/5;
 }
 
-.col-item {
-	float:         left;
-  	width:          46%;
-	height:        85vh;
-  	margin:   -40vh 2%;
-  	padding:       10px;
-	background: linear-gradient(to bottom, rgba(100,100,100,1), rgba(25,25,25,0.1));
+.grid {
+	display: grid;
+	grid-template-columns: 1fr 10fr 10fr 1fr;
+	grid-auto-rows: auto;
+	grid-gap: 4rem;
+}
+#about-Me {
+	grid-row:    1/2;
+	grid-column: 2/4;
+}
+.first {
+	grid-row:    2/3;
+	grid-column: 2/3;
+}
+.second {
+	grid-row:    2/3;
+	grid-column: 3/4;
+}
+
+#experience {
+	grid-row:    3/4;
+	grid-column: 2/4;
+}
+.third {
+	grid-row:    4/5;
+	grid-column: 2/3;
+}
+.fourth {
+	grid-row:    4/5;
+	grid-column: 3/4;
+}
+
+.grid-item {
+	float:             left;
+  	padding:       10px 4vw;
+	background: linear-gradient(to bottom, rgba(120,120,120,1), rgba(120,120,120,0.5));
 	box-shadow: 3px 3px 8px gray;
 }
-.col-icon{
+.grid-icon{
 	width:       150px;
 	height:      150px;
 	margin:  30px auto;
@@ -308,17 +134,26 @@ nav ul li a:hover::after  {
 }
 .school      { background-image: url("../Img/icons/school2.svg"     ); }
 .interests   { background-image: url("../Img/icons/interests2.svg"  ); }
-.col-header  {
+
+.grid-main-header {
+	margin-top: 10px;
+	text-align: center;
+	font-size: 6.5rem;
+	font-family: 'Pacifico', cursive;
+	color: white;
+	border-bottom: 5px solid white;
+}
+.grid-header  {
 	text-align: center;
 	padding-bottom: 2rem;
 	font-size: 2rem;
 	font-family: Raleway;
 	color: white;
 }
-.col-text {
+.grid-text {
 	text-align: left;
-	padding-bottom: 2rem;
-	font-size: 2.5rem;
+	padding-bottom: 5rem;
+	font-size: 3rem;
 	font-family: Raleway;
 	color: white;
 	text-shadow: -1px -1px 0 gray, 1px -1px 0 gray, -1px 1px 0 #000, 1px 1px 0 gray;
@@ -353,79 +188,3 @@ nav ul li a:hover::after  {
 	}
  }
 
-@media screen and (max-width: 1000px) {
-	.Mobile { display: inline-block; }
-	.Full { display: none; }
-	.container { text-align: center !important; }
-	.elevator-text p { 
-		margin-left:   4rem !important;
-		padding-left:  0rem !important; 
-		padding-right: 0rem !important; 
-		font-size:     2vh;
-	}
-	.quote { margin-bottom: -50px !important; }
-	.last  { margin-top:    -35px !important; }
-	.col-item { 
-		width: 96%; 
-		margin-top: -55vh
-	}
-	.transition2 { height: 55vh; }
-	.second { margin-top: 34vh !important; }
-}
-
-@media screen and (max-width: 900px) {
-	.Icons { display: inline-block; }
-	.Text { display: none; }
-}
-
-@media screen and (max-width: 800px) {
-	.circular {
-		height: 300px !important;
-		width: 300px  !important;
-	}
-}
-
-@media screen and (max-width: 700px) {
-	.col-text { font-size: 2.25rem; }
-	.col-icon{ width: 125px; height: 125px; }
-	.col-header { font-size: 1.75rem; }
-}
-
-@media screen and (max-width: 600px) {
-	.col-text { font-size: 2rem; }
-	.circular {
-		height: 250px !important;
-		width: 250px  !important;
-	}
-	.phone {
-		display: block !important;
-	}
-}
-
-@media screen and (max-width: 500px) {
-	.elevator-text p { 
-		margin-left:   0rem !important;
-		margin-right:  0rem !important;
-	}
-	.col-text { font-size: 1.75rem; }
-	.col-icon{ width: 100px; height: 100px; }
-	.brand { display: none; }
-	nav { justify-content: center !important; }
-	.circular {
-		height: 200px !important;
-		width: 200px  !important;
-	}
-	.quote { margin-bottom: -60px !important; }
-	.last  { margin-top:    -40px !important; }
-	.col-item { margin-top: -85vh }
-	.transition2 { height: 85vh; }
-	.second { margin-top: 5vh !important; }
-}
-
-@media screen and (max-width: 370px) {
-	.col-text { font-size: 1.5rem; }
-}
-
-@media screen and (max-width: 355px) {
-	.col-text { font-size: 1.25rem; }
-}
